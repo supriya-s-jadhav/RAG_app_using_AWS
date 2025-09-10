@@ -78,23 +78,20 @@ Step 2 : Qn vector will go to databses (v1,v2,v3,v4)
          Qn  vs  V4
 
 
-
-=================================================================================
 Step 1 : Data divide into chunks
 Step 2 : These chunks are going to LLM model and convert into vectors
 Step 3 : These vectors stored into databases
 step 4 : when a user asking a qn, it is also convert into vector
 Step 5 : Based on Cosine similarity, the suitable answer vectors will retrieval
 Step 6 : Based on prompt model will combine and generate the answer
-================================================================================
 
 #### Cosine similarity formula
-The cosine similarity between two vectors A and B is calculated using the following formula:
-Cosine Similarity (A, B) = (A · B) / (||A|| * ||B||)
-In this formula, A · B represents the dot product of vectors A and B. This is calculated by multiplying the corresponding components of the two vectors and summing up the results. ||A|| represents the Euclidean norm (magnitude) of vector A, which is the square root of the sum of the squares of its components. It’s calculated as ||A|| = √(A₁² + A₂² + … + Aₙ²). ||B|| represents the Euclidean norm (magnitude) of vector B, calculated in the same way as ||A||.
-How to calculate cosine similarity
-To calculate cosine similarity, you first complete the calculation for the dot product of the two vectors. Then, divide it by the product of their magnitudes. The resulting value will be in the range of -1 to 1, where:
-If the cosine similarity is 1, it means the vectors have the same direction and are perfectly similar.
-If the cosine similarity is 0, it means the vectors are perpendicular to each other and have no similarity.
-If the cosine similarity is -1, it means the vectors have opposite directions and are perfectly dissimilar.
+The cosine similarity between two vectors A and B is calculated using the following formula:<br>
+Cosine Similarity (A, B) = (A · B) / (||A|| * ||B||)<br>
+In this formula, A · B represents the dot product of vectors A and B. This is calculated by multiplying the corresponding components of the two vectors and summing up the results. ||A|| represents the Euclidean norm (magnitude) of vector A, which is the square root of the sum of the squares of its components. It’s calculated as ||A|| = √(A₁² + A₂² + … + Aₙ²). ||B|| represents the Euclidean norm (magnitude) of vector B, calculated in the same way as ||A||.<br>
+How to calculate cosine similarity<br>
+To calculate cosine similarity, you first complete the calculation for the dot product of the two vectors. Then, divide it by the product of their magnitudes. The resulting value will be in the range of -1 to 1, where:<br>
+- If the cosine similarity is 1, it means the vectors have the same direction and are perfectly similar.<br>
+- If the cosine similarity is 0, it means the vectors are perpendicular to each other and have no similarity.<br>
+- If the cosine similarity is -1, it means the vectors have opposite directions and are perfectly dissimilar.<br>
 
