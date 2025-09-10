@@ -53,29 +53,29 @@ Chunking strategy =====> Embedding strategy =====> Retrival strategy
 
 #### Embedding 
 
-We need to split the data into parts thats in the digesting form. It's called Embedding.
-Why we are spliting the data ? Bcz of the token limit
-Embeddings =====> information stored in the form of Vectors
-Male Female
- 1     0   ===== Encoding
+We need to split the data into parts thats in the digesting form. It's called Embedding.<br>
+Why we are spliting the data ? Bcz of the token limit<br>
+Embeddings =====> information stored in the form of Vectors<br>
+Male Female<br>
+ 1     0   ===== Encoding<br>
 
-Example: 
-Info : Virat Kohli is an Indian batsman. He played 300 matches. 
-Virat Kohli retired from Tests, T20. He is playing in ODS
-Who is Virat Kohli ===> User is aksing in English format
-Answers stored in Vector format (number)
-Virat Kohli is an Indian batsman.........V1 
-He played 300 matches....................V2
-Virat Kohli retired from Tests, T20.......V3 
-He is playing in ODS......................V4
+Example: <br>
+Info : Virat Kohli is an Indian batsman. He played 300 matches. <br>
+Virat Kohli retired from Tests, T20. He is playing in ODS<br>
+Who is Virat Kohli ===> User is aksing in English format<br>
+Answers stored in Vector format (number)<br>
+Virat Kohli is an Indian batsman.........V1 <br>
+He played 300 matches....................V2<br>
+Virat Kohli retired from Tests, T20.......V3 <br>
+He is playing in ODS......................V4<br>
 
-Step 1 : Qn should convert into vector
-Step 2 : Qn vector will go to databses (v1,v2,v3,v4)
-         Cosine similarity
-         Qn  vs  V1    =   90%
-         Qn  vs  V2    =   70%
-         Qn  vs  V3    =   
-         Qn  vs  V4
+Step 1 : Qn should convert into vector<br>
+Step 2 : Qn vector will go to databses (v1,v2,v3,v4)<br>
+         Cosine similarity<br>
+         Qn  vs  V1    =   90%<br>
+         Qn  vs  V2    =   70%<br>
+         Qn  vs  V3    =   <br>
+         Qn  vs  V4<br>
 
 
 Step 1 : Data divide into chunks
