@@ -33,7 +33,7 @@ We will have unified approach meaning combining the above two methods.
 
 ### RAG System
 
-![RAG Pipeline](/Users/supriyasampatjadhav/Documents/2025/GitRepositories/RAG_app_using_AWS/RAG_pipeline.png "RAG")
+![RAG_pipeline](images/RAG_pipeline.png)
 
 The core idea behind LLM is that it takes input as word embedding. Meaning human language is converted to numerical representation because computers cannot think in words but in numbers. 
 Now we will store the Terabytes of data into vector embedding preserving the semantics, and store them into a vector database. This way we don't need to go through the Terabytes of documents, our search will be faster because we split the information into chunks in the vector database.
