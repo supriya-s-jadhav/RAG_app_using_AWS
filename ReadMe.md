@@ -1,6 +1,17 @@
-# What is RAG
+```
+AUTHOR: Supriya Jadhav
 
-RAG stand for Retrieval Augmented Generation, which is a technique that connects the extrnal data sources to LLMs which helps enhance it's output. RAG provides foundation models (FMs) access to additional data they didn’t have during training. This data is used to enrich the generative AI prompt to deliver more context-specific and accurate responses without continuously retraining the foundational model. RAG enables AI systems to produce more accurate and contextually relevant responses.
+Version: 1.0
+
+Date: Sept 2025
+
+© 2025 Supriya Sampat Jadhav. All rights reserved.
+Unauthorized copying, use, or redistribution of this work is prohibited.
+```
+
+## What is RAG
+
+RAG stands for Retrieval Augmented Generation, which is a technique that connects the extrnal data sources to LLMs which helps enhance it's output. RAG provides foundation models (FMs) access to additional data they didn’t have during training. This data is used to enrich the generative AI prompt to deliver more context-specific and accurate responses without continuously retraining the foundational model. RAG enables AI systems to produce more accurate and contextually relevant responses.
 
 ## Why use RAG
 
@@ -41,7 +52,7 @@ Now we will store the Terabytes of data into vector embedding preserving the sem
 2. Augmented : The retrived data from Step 1 is injected into the prompt at runtime, this is the additional data provided to the AI model which is not part of it's the training data. The training data can become outdated evry fats or may not have access to the latest data. This way RAG provides the up-to-date information from the vector databse, which is private data knowledge without needting to fine-tune the AI model and modify the Large Language model. 
 3. Generation : AI assistant generates the response given the semantic relevant data retrived from the vector database.
 
-Legal documents will have different stretegy vs the customer support docuemnts. 
+Legal documents will have different stretegy vs the customer support docuemnts. <br>
 Chunking strategy =====> Embedding strategy =====> Retrival strategy
 
 
@@ -50,19 +61,11 @@ Chunking strategy =====> Embedding strategy =====> Retrival strategy
 We need to split the data into parts thats in the digesting form. It's called Embedding.<br>
 Why we are spliting the data ? Bcz of the token limit<br>
 Embeddings =====> information stored in the form of Vectors<br>
-Male Female<br>
- 1     0   ===== Encoding<br>
+|Male| Female|
+|----|-------|
+| 1  |   0   |   ===== Encoding <br>
 
 Example: <br>
-Info : Virat Kohli is an Indian batsman. He played 300 matches. <br>
-Virat Kohli retired from Tests, T20. He is playing in ODS<br>
-Who is Virat Kohli ===> User is aksing in English format<br>
-Answers stored in Vector format (number)<br>
-Virat Kohli is an Indian batsman.........V1 <br>
-He played 300 matches....................V2<br>
-Virat Kohli retired from Tests, T20.......V3 <br>
-He is playing in ODS......................V4<br>
-
 Step 1 : Qn should convert into vector<br>
 Step 2 : Qn vector will go to databses (v1,v2,v3,v4)<br>
          Cosine similarity<br>
@@ -72,12 +75,12 @@ Step 2 : Qn vector will go to databses (v1,v2,v3,v4)<br>
          Qn  vs  V4<br>
 
 
-Step 1 : Data divide into chunks
-Step 2 : These chunks are going to LLM model and convert into vectors
-Step 3 : These vectors stored into databases
-step 4 : when a user asking a qn, it is also convert into vector
-Step 5 : Based on Cosine similarity, the suitable answer vectors will retrieval
-Step 6 : Based on prompt model will combine and generate the answer
+Step 1 : Data divide into chunks <br>
+Step 2 : These chunks are going to LLM model and convert into vectors <br>
+Step 3 : These vectors stored into databases <br>
+step 4 : when a user asking a qn, it is also convert into vector <br>
+Step 5 : Based on Cosine similarity, the suitable answer vectors will retrieval <br>
+Step 6 : Based on prompt model will combine and generate the answer <br>
 
 #### Cosine similarity formula
 The cosine similarity between two vectors A and B is calculated using the following formula:<br>
