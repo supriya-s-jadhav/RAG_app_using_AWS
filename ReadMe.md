@@ -33,6 +33,8 @@ We will have unified approach meaning combining the above two methods.
 
 ### RAG System
 
+![RAG Pipeline](/Users/supriyasampatjadhav/Documents/2025/GitRepositories/RAG_app_using_AWS/RAG_pipeline.png "RAG")
+
 The core idea behind LLM is that it takes input as word embedding. Meaning human language is converted to numerical representation because computers cannot think in words but in numbers. 
 Now we will store the Terabytes of data into vector embedding preserving the semantics, and store them into a vector database. This way we don't need to go through the Terabytes of documents, our search will be faster because we split the information into chunks in the vector database.
 1. Retrival : Once the user asks question by giving prompt to the chatbit, the question is converted into the vector embedding (because that's the language AI model understand). Now the question is compared against the vector embedding of the documents. This type of serach is called the semantic serach. 
@@ -42,14 +44,6 @@ Now we will store the Terabytes of data into vector embedding preserving the sem
 Legal documents will have different stretegy vs the customer support docuemnts. 
 Chunking strategy =====> Embedding strategy =====> Retrival strategy
 
-1. Set up Development environemnt
-2. Explore TechCorp's Document vault : Markdown docs, employee handboook, Product specs, meeting notes, FAQs
-3. Initialze Vector databse : Chroma db
-4. Learn Document chunking strategy (chunk size, overlao size)
-5. Understanding how embedding works : Questions and docuemnts becomes vectors.
-6. Feed the AI brain
-7. Activate Semantic search
-8. Laucnh AI assistant (using Flask)
 
 #### Embedding 
 
