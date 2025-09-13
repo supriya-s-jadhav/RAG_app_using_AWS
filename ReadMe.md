@@ -6,7 +6,6 @@ Version: 1.0
 Date: Sept 2025
 
 © 2025 Supriya Sampat Jadhav. All rights reserved.
-Unauthorized copying, use, or redistribution of this work is prohibited.
 ```
 
 ## What is RAG
